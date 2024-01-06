@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      background-color: #b3d4fc;
+      border-radius: 5px;
+      animation: moveAndColorChange 2s infinite linear;
+    }
+
+    @keyframes moveAndColorChange {
+      0% {
+        transform: translateX(0);
+        background-color: #b3d4fc;
+      }
+      25% {
+        transform: translateX(50px);
+        background-color: #75a3e1;
+      }
+      50% {
+        transform: translateX(100px);
+        background-color: #5079c8;
+      }
+      75% {
+        transform: translateX(150px);
+        background-color: #75a3e1;
+      }
+      100% {
+        transform: translateX(200px);
+        background-color: #b3d4fc;
+      }
+    }
+  </style>
+  <title>Move and Color Change Animation</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- 添加更多的 .box 元素 -->
+  </div>
+</body>
+</html>
